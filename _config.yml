@@ -12,7 +12,7 @@ title_separator          : "-"
 name                     : "The GoodBot Company"
 description              : "A Blog by the GoodBot Company. We specialize in crafting solutions for the web. We are a Ruby on Rails Development & Design firm."
 url                      : "blog.goodbot.co"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "/"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
