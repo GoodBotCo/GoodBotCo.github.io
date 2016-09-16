@@ -175,7 +175,6 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: $background-color;
 
   a {
     display: block;
@@ -210,6 +209,7 @@
 
       &:first-child {
         font-weight: bold;
+        font-size: 32px;
 
         a {
           margin-left: 0;
