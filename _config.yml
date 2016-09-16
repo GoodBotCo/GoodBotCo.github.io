@@ -78,8 +78,8 @@ analytics:
 # Site Author
 author:
   name             : "GoodBotCo"
-  avatar           : "bio-photo.jpg"
-  bio              : ""
+  avatar           : "Bot.png"
+  bio              : "We specialize in crafting solutions for the web. We are a Ruby on Rails Development & Design firm."
   location         : 
   email            : "hello@goodbot.co"
   uri              :
