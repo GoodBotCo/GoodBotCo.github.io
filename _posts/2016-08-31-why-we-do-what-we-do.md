@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Why we do, what we do.
 ---
 
