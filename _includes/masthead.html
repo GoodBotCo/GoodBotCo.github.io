@@ -8,8 +8,8 @@
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg">
             <a href="{{ base_path }}/">{{ site.title }}</a>
-            <span class="sub-title">Thoughts and opinions on design and technology - by The GoodBot Company</span>
           </li>
+          <span class="sub-title">Thoughts and opinions on design and technology - by The GoodBot Company</span>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
