@@ -12,7 +12,6 @@ Here is a typical scenario of where Concerns come in useful, with an all famous 
 class News < ActiveRecord::Base
   validates :content, presence: true
   validates :title, presence: true
-  validates :category_id, presence: true
   
   has_many :comments
 end
@@ -121,4 +120,5 @@ end
 ```
 
 Concerns are nothing but modules that can encapsulate APIs related to different models into a single file, they drastically reduce the redundancy in your codebase, while making it easy to test and maintain. The most simplest examples above, both News and Comment are Likeable, hence, through the Likeable concern they share the behaviour.
+
 To see how Concerns might be used in a big live project, checkout this blog post by 37Signals, on how they use concerns in Basecamp - [Link](https://signalvnoise.com/posts/3372-put-chubby-models-on-a-diet-with-concerns)
