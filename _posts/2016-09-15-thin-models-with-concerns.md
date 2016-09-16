@@ -79,9 +79,9 @@ class Like < ActiveRecord::Base
 end
 ```
 
-You see, here the method `#like!` is already duplicate code between the `News`, and `Comment` models. In the future, if you decide to update the Like API, you’ll probably have to add more duplicate code in `News` and `Comment`. Well, have no Concern young one, Concern to the rescue.
+You see, here the method `#like!` is already duplicate code between the `News`, and `Comment` models. In the future, if you decide to update the Like API, you’ll probably have to add more duplicate code in both `News` and `Comment`. Well, have no Concern young one, Concerns to the rescue.
 
-Here is how you can refactor the above code `ActiveModel::Concern`.
+Here is how you can refactor the above code with `ActiveModel::Concern`.
 
 ```ruby
 class News < ActiveRecord::Base
