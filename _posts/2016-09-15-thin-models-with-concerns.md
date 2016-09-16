@@ -1,6 +1,6 @@
 ---
 title: How to make fat models thin again with Rails Concerns
-tags: RailsTips, Programming, Refactoring
+tags: [RailsTips, Programming, Refactoring]
 ---
 
 One of the most common principles of Rails you might hear when starting off is - *Fat Models, Thin Controllers*. For sure, fat models are way better than having fat controllers, it helps create a better API for any model that you might have, but I am sure your `User` model is already going out of hand.
