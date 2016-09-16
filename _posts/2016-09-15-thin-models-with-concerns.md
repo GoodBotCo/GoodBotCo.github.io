@@ -1,5 +1,4 @@
 ---
-layout: post
 title: How to make fat models thin again with Rails Concerns
 ---
 
