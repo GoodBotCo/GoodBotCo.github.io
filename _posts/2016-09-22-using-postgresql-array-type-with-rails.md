@@ -72,6 +72,6 @@ Following is an example of how you could interact with the `Tags` column. Becaus
  => true
 ```
 
-I hope this helps you create Database schemas for your project, and you don't end up creating a whole new `Tags` table, like we were about to do for one of our projects, before we found out that was possible. As they say, *a little knowledge is dangerous*. :)
+I hope this helps you create better Database schemas for your project, and you don't end up creating a whole new `Tags` table, like we were about to do for one of our projects, before we found that you can actually store Array types in PostgreSQL. As they say, *a little knowledge is dangerous*. :)
 
 Happy Postgresing!
