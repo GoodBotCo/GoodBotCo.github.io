@@ -56,7 +56,7 @@ $ bundle exec rails c
 => Array
 ```
 
-Following is an example of how you could interact with the `Tags` column. Because its a Ruby Array, all the Array methods are available to interact it.
+Following is an example of how you could interact with the `Tags` column. Because its a Ruby Array, all the Array methods are available to work with.
 
 ```ruby
 2.2.0 :011 > news.tags
