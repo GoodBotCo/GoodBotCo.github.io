@@ -56,7 +56,7 @@ $ bundle exec rails c
 => Array
 ```
 
-You can easily, add more tags just like you would add an element to an existing array.
+Following is an example of how you could interact with the `Tags` column. Because its a Ruby Array, all the Array methods are available to interact it.
 
 ```ruby
 2.2.0 :011 > news.tags
