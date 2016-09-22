@@ -4,7 +4,7 @@ title: Using PostgreSQL Array Type with Rails 4
 
 With Rails 4 came support for array fields for PostgreSQL. However, this pattern of storing data is not quite popular. So we thought it would be nice to share where this can be used in a project.
 
-Say you have a `News` model, which belongs to `Category`, and has the field `content`, and `category_id` as the foriegn key. Also, let's assume, you want to tag certain news with certain keywords. These keywords can be stored in a PostgreSQL Array type.
+Say you have a `News` model, which belongs to `Category`, and has the fields `content`, and `category_id` (as the foriegn key). Also, let's assume, you want to tag certain news with certain keywords. These keywords can be stored in a PostgreSQL Array type.
 
 Writing migrations for these tables is pretty straightforward, except for the `tags` column, which is an array type in this case. We use the following syntax to create our migration.
 
