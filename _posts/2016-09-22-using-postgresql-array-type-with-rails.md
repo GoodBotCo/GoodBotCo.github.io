@@ -23,7 +23,7 @@ end
 A few things to note here are:
 
 - Specify datatype as `string` or `text`, with `array: true`
-- Optionally, you can specify default as an empty array like `default: []`.
+- Optionally, you can specify a default value for the array by adding: `default: []`.
 
 The Model code should look like this:
 
