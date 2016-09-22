@@ -56,7 +56,7 @@ $ bundle exec rails c
 => Array
 ```
 
-Following is an example of how you could interact with the `Tags` column. Because its a Ruby Array, all the Array methods are available to work with.
+Following is an example of how you could interact with the `Tags` column. Because it's a Ruby Array, all the Array methods are available to work with.
 
 ```ruby
 2.2.0 :011 > news.tags
@@ -72,8 +72,6 @@ Following is an example of how you could interact with the `Tags` column. Becaus
  => true
 ```
 
-I hope this helps you create better Models for your project, and you don't end up creating a whole `Tags` table, like we were about to do for one of our projects. :)
-
-As they say, *a little knowledge is dangerous*.
+I hope this helps you create Database schemas for your project, and you don't end up creating a whole new `Tags` table, like we were about to do for one of our projects, before we found out that was possible. As they say, *a little knowledge is dangerous*. :)
 
 Happy Postgresing!
