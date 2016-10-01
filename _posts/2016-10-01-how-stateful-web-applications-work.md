@@ -27,7 +27,7 @@ Two of our favorite web frameworks at the moment are Ruby on Rails and Phoenix. 
 So Rails first (as it's still our favorite). We move all the CPU intensive tasks or tasks that do not require the request/response cycle to be blocked, to background jobs. So a typical flow of receiving an event, and broadcasting it to clients would go through the following steps:
 
 - Client sends an event to the Channel
-- Channel enqueues a job for the same
+- Channel enqueues a job
 - The background jobs library (Sidekiq/Resque) will run the respective worker
 - Worker passes the event to the pubsub adapter
 - Pubsub adapter pushes the event to the broadcast server
