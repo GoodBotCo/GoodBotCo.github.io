@@ -12,7 +12,7 @@ In comparison to a stateless application, stateful applications can really take 
 
 So it is important to consider these caveats before making your regular web application stateful. It is also important that your infrastructure is able to handle these requests concurrently. From your web proxy to your web server, you must be able to hold long running connections at the same time. And, since every single connection costs memory, you want a single web server to hold as many connections as possible.
 
-To hold as many open connections as possible, it is important that your application handles machine resources (IO and CPU) as efficiently as possible. Most of the programming languages provide threads, which would not block IO (and provides CPU-based concurrency), but not all the programming languages can handle multi-core efficiently. So to hold 6000 connections on a single machine, efficiently, it is important that the language you use is able to handle such load, and also not block IO. This should reduce a lot of infrastructure cost, and also improve user experience
+To hold as many open connections as possible, it is important that your application handles machine resources (IO and CPU) as efficiently as possible. Most of the programming languages provide threads, which would not block IO (and provides CPU-based concurrency), but not all the programming languages can handle multi-core efficiently. So to hold 12,000 connections on a single machine, efficiently, it is important that the language you use is able to handle such load, and also not block IO. This should reduce a lot of infrastructure cost, and also improve user experience
 
 # CPU Blocking
 
