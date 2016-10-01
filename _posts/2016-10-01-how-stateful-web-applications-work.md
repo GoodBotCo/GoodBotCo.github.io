@@ -16,7 +16,7 @@ To hold as many open connections as possible, it is important that your applicat
 
 # CPU Blocking
 
-With stateful apps, multiple clients would all-time connected at the same time, sending events to the server, or receiving events from the server. It is important that your runtime is efficiently able to multiplex these always on connections, otherwise, latency can considerably increase, resulting in a pretty slow application.
+For a stateful application, multiple clients would be all-time connected to the server, sending events to the server, or receiving events from the server. It is important that your runtime is efficiently able to multiplex these always on connections, otherwise, latency can considerably increase, resulting in a pretty slow application.
 
 To share an example of such a case. Say you have around 1000 running connections from multiple clients, each connection taking an average of 5ms of CPU time. So by the time your 1000th event gets access to your CPU, that client has already waited almost 5 seconds. Oh, crap! However, in a stateless application it is easier to solve this problem by load balancing, but with WebSockets, the machine you are connected to has to handle all the load.
 
