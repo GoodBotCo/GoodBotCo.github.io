@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Thoughts & Bots - Blog by the GoodBot Co."
+title                    : "Thoughts & Bots"
 title_separator          : "-"
 name                     : "The GoodBot Company"
-description              : "A Blog by the GoodBot Company. We specialize in crafting solutions for the web. We are a Ruby on Rails Development & Design firm."
+description              : "GoodBot - Blog. We specialize in crafting solutions for the web. We are a Ruby on Rails Development & Design firm."
 url                      : # "blog.goodbot.co"
 baseurl                  : #
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
