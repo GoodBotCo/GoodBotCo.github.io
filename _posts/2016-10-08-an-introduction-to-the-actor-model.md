@@ -6,19 +6,19 @@ Our CPUs are not getting any faster, but what we are getting instead are multico
 
 The Actor model is a conception model. It is designed to deal with concurrent computation, in which "actors" are the universal primitives. In simple English, the model asserts that *everything is an actor*. This philosophy is similar to the *everything is an object* assertion used by Object Oriented Languages. One of the most famous languages that use this model is Erlang, and now it's child prodigy Elixir.
 
-### What are Actors?
+# What are Actors?
 
 As described above, and Actor is the most primitive unit of computation. It's the unit that receives messages, and based on that does some kind of computation.
 
 This idea is actually not very different from that of Objected Oriented Programming (OOP). In OOP, an Object receives a message, or you can say a method call, based on which it performs certain actions. The main difference to note here is that Actors are completely isolated from each other and that they do not share memory. Also, actors maintain a private state, that another actor can never change. To communicate with each other actors use messages, which are delivered to a unique address assigned to each actor.
 
-### Mailboxes
+# Mailboxes
 
 The messages are sent asynchronously to actors. The place where these messages are stored is called a Mailbox. While an actor processes a message, all the other messages are stored in its mailbox.
 
 One of the important thing to understand is that, although actors run concurrently, but the messages passed to actors are processed sequentially. For example, if you send 3 messages to an actor, it will execute those messages one at a time. So to concurrently execute these messages, you would have to create 3 actors, and then send one message to each one of them.
 
-### Actors in Action
+# Actors in Action
 
 When you message an actor, it can do a few things:
 
@@ -30,7 +30,7 @@ The first two points are pretty straightforward, the last one is a bit interesti
 
 To put this in an example. Let's assume you have an actor that calculates the sum of all numbers. Its initial state would be the number 0, let's say you pass it a message with the number 7. The actor would now designate that the for the next message it receives, it's state would be 7.
 
-### Crash Handling
+# Crash Handling
 
 One of the philosophy that Erlang works on is *let it crash*. This works on the basic idea that programmers do not need to write defensive code, wherein they spend time thinking about all the possible ways the code can break, and then handle that. So here is where Erlang wins with the *letting it crashe* idea. What Erlang does is it suggests that this critical code be rather supervised by someone whose sole purpose is to know that what should be done when something crashes, all this is made possible by the actor model.
 
@@ -38,7 +38,7 @@ In Erlang, every code runs inside a `process`, which Erlang calls its actors. An
 
 This setup makes it possible to create a self-healing system. Say when an actor reaches an exceptional state, and crashes - a supervisor is notified and it can perform an action based on that message. One of the most common things to do is to reset that actor its initial state.
 
-### Easy Distribution
+# Easy Distribution
 
 One of the most interesting aspects of the Actor Model is distribution. It actually does not matter if the actor that's sending a message, and the one that is receiving the message reside on the same machine.
 
@@ -46,6 +46,6 @@ As the actor is nothing but a unit of code with a mailbox and an internal state,
 
 --
 
-This philosophy is the basis of Erlang and Elixir. Alos, Ruby's [Celluloid ](https://github.com/celluloid/celluloid) framework is based on this model.
+This philosophy is the basis of Erlang and Elixir. Alos, Ruby's [Celluloid](https://github.com/celluloid/celluloid) framework is based on this model.
 
 I plan to follow this post up with some code examples of Actors in action with Elixir.
