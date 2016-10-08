@@ -36,16 +36,16 @@ One of the philosophy that Erlang works on is *let it crash*. This works on the 
 
 In Erlang, every code runs inside a `process`, which Erlang calls its actors. And as we learned above, this `process` is completely isolated, and its state would not change the state of any other `process`. There is another `process` called the `supervisor`. The `supervisor` is notified when a supervised `process` crashes.
 
-This setup makes it possible to create a self-healing system. Say when an actor reaches an exceptional state, and crashes - a supervisor is notified and it can perform an action based on that message. One of the most common things to do is to reset that actor its initial state.
+This setup makes it possible to create a self-healing system. Say when an actor reaches an exceptional state, and crashes - a supervisor is notified and it can perform an action based on that message. One of the most common things to do is to reset that actor to its initial state.
 
 # Easy Distribution
 
 One of the most interesting aspects of the Actor Model is distribution. It actually does not matter if the actor that's sending a message, and the one that is receiving the message reside on the same machine.
 
-As the actor is nothing but a unit of code with a mailbox and an internal state, and it responds to messages - how does it matter if it is on the same machine, or on a remote one? As long as the two actors are able to communicate. This setup makes allows programmers to leverage distributed computers, and create a really fault tolerant system wherein even one system fails there is another system to recover from.
+As the actor is nothing but a unit of code with a mailbox and an internal state, and it responds to messages - how does it matter if it is on the same machine, or on a remote one? As long as the two actors are able to communicate. This setup allows programmers to leverage distributed computers, and create a really fault tolerant system wherein even if one system fails there is another system to recover from.
 
---
+------------------
 
-This philosophy is the basis of Erlang and Elixir. Alos, Ruby's [Celluloid](https://github.com/celluloid/celluloid) framework is based on this model.
+This philosophy is the basis of Erlang and Elixir. Also, Ruby's [Celluloid](https://github.com/celluloid/celluloid) framework is based on it.
 
 I plan to follow this post up with some code examples of Actors in action with Elixir.
