@@ -28,7 +28,7 @@ When you message an actor, it can do a few things:
 
 The first two points are pretty straightforward, the last one is a bit interesting to understand. Like we discussed above, the actors always maintain a private state. So what designating the behavior to be used for the next message means is how its state will look to the next message the actor receives, or in other words how the actor will mutate its state.
 
-To put this in an example. Let's assume you have an actor that calculates the sum of all numbers. Its initial state would be the number 0, let's say you pass it a message with the number 7. The actor would now designate that the for the next message it receives, it's state would be 7.
+To put this in an example. Let's assume you have an actor that calculates the sum of all numbers. Its initial state would be the number 0, let's say you pass it a message with the number 7. The actor would now designate that for the next message it receives, it's state would be 7.
 
 # Crash Handling
 
