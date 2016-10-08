@@ -2,7 +2,7 @@
 title: An Introduction to the Actor Model
 ---
 
-The thing is are CPUs are not getting any faster, but what we are getting instead is multicore CPUs. In one of our [previous blogposts](http://blog.goodbot.co/how-stateful-web-applications-work/), we mentioned that it is very important for a modern programming language to take advantage of the hardware available to it, and one way to do that is run code concurrently. For a few decades now programmers have worked with `threads`, and even though they have been great, programmers know that they are not the way forward. This is where the Actor Model comes in, it is an alternative to using `threads`. Let's discuss how it actually works.
+Our CPUs are not getting any faster, but what we are getting instead is multicore CPUs. In one of our [previous blogposts](http://blog.goodbot.co/how-stateful-web-applications-work/), we mentioned that it is very important for a modern programming language to take advantage of the hardware available to it, and one way to do that is run code concurrently. For a few decades now programmers have worked with `threads`, and even though they have been great, programmers know that they are not the way forward. This is where the Actor Model comes in, it is an alternative to using `threads`. Let's discuss how it actually works.
 
 The Actor model is a conception model. It is designed to deal with concurrent computation, in which "actors" are the universal primitives. In simple English, the model asserts that *everything is an actor*. This philosophy is similar to the *everything is an object* assertion used by Object Oriented Languages. One of the most famous languages that use this model is Erlang, and now it's child prodigy Elixir.
 
