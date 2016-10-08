@@ -32,7 +32,7 @@ To put this in an example. Let's assume you have an actor that calculates the su
 
 # Crash Handling
 
-One of the philosophy that Erlang works on is *let it crash*. This works on the basic idea that programmers do not need to write defensive code, wherein they spend time thinking about all the possible ways the code can break, and then handle that. So here is where Erlang wins with the *letting it crash* idea. What Erlang does is it suggests that this critical code be rather supervised by someone whose sole purpose is to know that what should be done when something crashes, all this is made possible by the actor model.
+One of the philosophy that Erlang works on is *let it crash*. This works on the basic idea that programmers do not need to write defensive code, wherein they spend time thinking about all the possible ways the code can break, and then handle that. So here is where Erlang wins with the *letting it crash* idea. Erlang suggests that this critical code be rather supervised by someone whose sole purpose is to know what should be done when something crashes, and all this is made possible by the actor model.
 
 In Erlang, every code runs inside a `process`, which Erlang calls its actors. And as we learned above, this `process` is completely isolated, and its state would not change the state of any other `process`. There is another `process` called the `supervisor`. The `supervisor` is notified when a supervised `process` crashes.
 
