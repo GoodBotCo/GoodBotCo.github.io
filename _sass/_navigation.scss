@@ -209,8 +209,9 @@
       vertical-align: middle;
 
       &:first-child {
-        font-weight: bold;
-        font-size: 32px;
+        font-weight: 300;
+        font-size: 36px;
+        letter-spacing: -1px;
 
         a {
           margin-left: 0;
