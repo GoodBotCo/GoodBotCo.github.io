@@ -14,7 +14,7 @@ description              : "GoodBot - Blog. We specialize in crafting solutions 
 url                      : # "blog.goodbot.co"
 baseurl                  : #
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "Bot.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "full-logo.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -91,8 +91,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "goodbot"
-  avatar           : "Bot.png"
+  name             : ""
+  avatar           : "full-logo.png"
   bio              : "We specialize in crafting solutions for the web. We are a Ruby on Rails Development & Design firm."
   location         : 
   email            : "hello@goodbot.co"
