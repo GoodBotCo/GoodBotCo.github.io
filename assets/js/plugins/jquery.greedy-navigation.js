@@ -61,12 +61,12 @@ function updateNav() {
 // Window listeners
 
 $(window).resize(function() {
-  updateNav();
+  //updateNav();
 });
 
 $btn.on('click', function() {
-  $hlinks.toggleClass('hidden');
-  $(this).toggleClass('close');
+  //$hlinks.toggleClass('hidden');
+  //$(this).toggleClass('close');
 });
 
 //updateNav();
