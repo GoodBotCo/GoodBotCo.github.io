@@ -1,25 +1,16 @@
 {% include base_path %}
 
+<!--
+Origal File Available at:
+https://gist.github.com/pranav7/641d92d52599456d9b5263e4c5e7af82
+-->
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
-          </li>
-          <span class="sub-title">Thoughts and opinions on design and technology - by The GoodBot Company</span>
-          {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-              {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-          {% endfor %}
-        </ul>
-        <ul class="hidden-links hidden"></ul>
+      <nav id="site-nav">
+        <span class="site-title"><a href="{{ base_path }}/">{{ site.title }}</a></span>
+        <span class="sub-title">Thoughts and opinions on design and technology - by The GoodBot Company</span>
       </nav>
     </div>
   </div>
