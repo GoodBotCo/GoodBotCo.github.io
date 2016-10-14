@@ -35,6 +35,10 @@
     font-weight: normal;
     margin-left: 2rem;
     vertical-align: text-bottom;
+    
+    @include breakpoint($small) {
+      display: none;
+    }
   }
   
   .site-title a {
