@@ -36,10 +36,16 @@
     color: rgba(255, 255, 255, 0.7) !important;
     font-weight: normal;
   }
+  
+  .site-title a {
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .masthead__menu {
-
   ul {
     margin: 0;
     padding: 0;
