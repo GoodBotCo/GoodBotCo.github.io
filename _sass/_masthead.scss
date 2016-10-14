@@ -36,9 +36,9 @@
     margin-left: 2rem;
     vertical-align: text-bottom;
     
-    @include breakpoint($small) {
-      margin-left: 0;
+    @media (max-width: $small) {
       display: block;
+      margin-left: 0;
     }
   }
   
