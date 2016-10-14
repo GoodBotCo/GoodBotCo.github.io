@@ -31,10 +31,10 @@
   }
   
   .sub-title {
-    position: relative;
-    top: 18px;
     color: rgba(255, 255, 255, 0.7) !important;
     font-weight: normal;
+    margin-left: 2rem;
+    vertical-align: text-bottom;
   }
   
   .site-title a {
@@ -42,6 +42,7 @@
     font-size: 1.5rem;
     color: #fff;
     text-decoration: none;
+    letter-spacing: -1px;
   }
 }
 
