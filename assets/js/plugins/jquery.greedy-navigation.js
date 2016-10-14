@@ -69,4 +69,4 @@ $btn.on('click', function() {
   $(this).toggleClass('close');
 });
 
-updateNav();
+//updateNav();
