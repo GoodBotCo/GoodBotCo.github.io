@@ -55,7 +55,6 @@
 }
 
 .page__content {
-
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
@@ -233,6 +232,7 @@
 
 .page__meta {
   margin-top: 2em;
+  margin-bottom: 4rem;
   color: mix(#fff, $gray, 25%);
   font-family: $sans-serif;
   font-size: $type-size-6;
