@@ -99,8 +99,10 @@ blockquote {
   margin: 2em 1em 2em 0;
   padding-left: 1em;
   padding-right: 1em;
-  font-style: italic;
-  border-left: 0.25em solid $primary-color;
+  color: #909090;
+  font-weight: 200;
+  font-size: 1.4rem;
+  border-left: 1px solid #bdbdbd;
 
   cite {
     font-style: italic;
