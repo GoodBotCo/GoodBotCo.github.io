@@ -1,5 +1,6 @@
 ---
 title: Why we do, what we do.
+tags: technology
 ---
 
 First of all, 🍻 cheers to humble beginnings - it all started somewhere for every big and small business, so let’s assume, for us, it starts here — with this blog post.
