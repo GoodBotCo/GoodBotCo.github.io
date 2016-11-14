@@ -47,5 +47,3 @@ As the actor is nothing but a unit of code with a mailbox and an internal state,
 ------------------
 
 This philosophy is the basis of Erlang and Elixir. Also, Ruby's [Celluloid](https://github.com/celluloid/celluloid) framework is based on it.
-
-I plan to follow this post up with some code examples of Actors in action with Elixir.
