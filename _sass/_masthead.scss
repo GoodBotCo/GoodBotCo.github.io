@@ -11,6 +11,7 @@
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
+  border-bottom: 1px dashed #a8afbd;
 
   &__inner-wrap {
     @include container;
