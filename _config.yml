@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Heartbeat Blog"
+title                    : "The Heartbeat Blog"
 title_separator          : "-"
 name                     : "Heartbeat"
 description              : "Heartbeat is a simple tool to help founders stay connected to their employees."
