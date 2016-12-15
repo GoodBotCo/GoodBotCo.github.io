@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Thoughts & Bots"
+title                    : "Heartbeat Blog"
 title_separator          : "-"
-name                     : "The GoodBot Company"
-description              : "GoodBot - Blog. We specialize in crafting solutions for the web. We are a Ruby on Rails Development & Design firm."
+name                     : "Heartbeat"
+description              : "Heartbeat is a simple tool to help founders stay connected to their employees."
 url                      : # "blog.goodbot.co"
 baseurl                  : #
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -69,7 +69,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : "GoodBotCo"
+  username               : "HeartbeatHQ"
 facebook:
   username               :
   app_id                 :
@@ -93,9 +93,9 @@ analytics:
 author:
   name             : ""
   avatar           : "full-logo.png"
-  bio              : "We specialize in crafting solutions for the web. We are a Ruby on Rails Development & Design firm."
+  bio              : ""
   location         : 
-  email            : "hello@goodbot.co"
+  email            : "hello@heartbeathq.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -114,7 +114,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : "GoodBotCo"
+  twitter          : "HeartbeatHQ"
   vine             :
   weibo            :
   xing             :
