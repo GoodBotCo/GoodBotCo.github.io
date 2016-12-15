@@ -14,7 +14,7 @@ description              : "Heartbeat is a simple tool to help founders stay con
 url                      : # "blog.goodbot.co"
 baseurl                  : #
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "full-logo.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "Heartbeat.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -92,8 +92,8 @@ analytics:
 # Site Author
 author:
   name             : ""
-  avatar           : "full-logo.png"
-  bio              : ""
+  avatar           : "Heartbeat.png"
+  bio              : "Heartbeat is a simple tool to help founders stay connected to their employees."
   location         : 
   email            : "hello@heartbeathq.com"
   uri              :
