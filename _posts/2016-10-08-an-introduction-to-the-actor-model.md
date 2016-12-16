@@ -8,9 +8,9 @@ The Actor model is a conception model. It is designed to deal with concurrent co
 
 # What are Actors?
 
-As described above, and Actor is the most primitive unit of computation. It's the unit that receives messages, and based on that does some kind of computation.
+As described above, an Actor is the most primitive unit of computation. It's the unit that receives messages, and based on that does some kind of computation.
 
-This idea is actually not very different from that of Objected Oriented Programming (OOP). In OOP, an Object receives a message, or you can say a method call, based on which it performs certain actions. The main difference to note here is that Actors are completely isolated from each other and that they do not share memory. Also, actors maintain a private state, that another actor can never change. To communicate with each other actors use messages, which are delivered to a unique address assigned to each actor.
+This idea is actually not very different from that of Object Oriented Programming (OOP). In OOP, an Object receives a message, or you can say a method call, based on which it performs certain actions. The main difference to note here is that Actors are completely isolated from each other and that they do not share memory. Also, actors maintain a private state, that another actor can never change. To communicate with each other actors use messages, which are delivered to a unique address assigned to each actor.
 
 # Mailboxes
 
