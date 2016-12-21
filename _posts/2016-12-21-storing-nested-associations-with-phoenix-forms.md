@@ -36,7 +36,6 @@ Note that we are using `cast_assoc/1` here. `cast_assoc/1` is used when you want
 ```elixir
 defmodule Myapp.Person do
   use Myapp.Web, :model
-  import Comeonin.Bcrypt, only: [checkpw: 2, hashpwsalt: 1]
 
   schema "people" do
     field :first_name, :string
