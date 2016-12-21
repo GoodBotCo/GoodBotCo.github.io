@@ -67,9 +67,9 @@ We use Dynamic Forms and [Slim-Lang](https://github.com/slime-lang/phoenix_slime
 = form_for @changeset, @action, fn c ->
   = input c, :name, label: "Company Name"
   = inputs_for c, :people, fn f ->
-  	= input f, :first_name
-  	= input f, :last_name
-  	= input f, :email
+    = input f, :first_name
+    = input f, :last_name
+    = input f, :email
   = submit "Continue"
 ```
 
