@@ -8,7 +8,7 @@ This blog post would share a simple example of storing nested associations (main
 
 ### `Company`
 
-```ruby
+```elixir
 defmodule Myapp.Company do
   use Myapp.Web, :model
 
@@ -20,9 +20,6 @@ defmodule Myapp.Company do
     timestamps()
   end
 
-  @doc """
-  Builds a changeset based on the `struct` and `params`.
-  """
   def changeset(struct, params \\ %{}) do
     struct
     |> cast(params, [:name])
@@ -36,7 +33,7 @@ Note that we are using `cast_assoc/1` here. `cast_assoc/1` is used when you want
 
 ### `Person`
 
-```ruby
+```elixir
 defmodule Myapp.Person do
   use Myapp.Web, :model
   import Comeonin.Bcrypt, only: [checkpw: 2, hashpwsalt: 1]
@@ -67,7 +64,7 @@ end
 
 We use Dynamic Forms and [Slim-Lang](https://github.com/slime-lang/phoenix_slime) for templates. Follow this [amazing blogpost](http://blog.plataformatec.com.br/2016/09/dynamic-forms-with-phoenix/) from [José Valim](http://blog.plataformatec.com.br/author/josevalim/) to learn how to build Dynamic Forms. For the sake of simplicity, we'll only save one person at the moment.
 
-```ruby
+```elixir
 = form_for @changeset, @action, fn c ->
   = input c, :name, label: "Company Name"
   = inputs_for c, :people, fn f ->
@@ -81,7 +78,7 @@ We use Dynamic Forms and [Slim-Lang](https://github.com/slime-lang/phoenix_slime
 
 The `create` method was the trickiest to get right. I actually had to dig into the code for [Ecto Tests](https://github.com/elixir-ecto/ecto/blob/6f1971f4120b84e1a441792feb77ba451c4fc783/integration_test/cases/repo.exs#L633) to find a way to make this work. Again, for the sake of simplicity we are just storing one person.
 
-```ruby
+```elixir
 defmodule Myapp.CompanyController do
   use Myapp.Web, :controller
 
