@@ -56,7 +56,6 @@ defmodule Myapp.Person do
     |> unique_constraint(:email)
   end
 end
-
 ```
 
 ### Template
