@@ -115,6 +115,6 @@ defmodule Myapp.CompanyController do
 end
 ```
 
-`put_assoc` is typically used when we already have the associations as structs and changesets, and we tell Ecto to take those entries as is.
+`put_assoc/2` is typically used when we already have the associations as structs and changesets, and we tell Ecto to take those entries as is.
 
 And that's it. Please do share your feedback in the comments below, or if there are better ways to approach this.
