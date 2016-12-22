@@ -3,13 +3,19 @@
 {% if page.previous or page.next %}
   <nav class="pagination">
     {% if page.previous %}
-      <a href="{{ base_path }}{{ page.previous.url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">
-        &larr; {{ page.previous.title }}
+      <a href="{{ base_path }}{{ page.previous.url }}" class="pagination--pager" style="text-align: right;" title="{{ page.previous.title | markdownify | strip_html }}">
+        <span class="back-btn">&larr;</span>
+        <span>
+          {{ page.previous.title }}
+        </span>
       </a>
     {% endif %}
     {% if page.next %}
-      <a href="{{ base_path }}{{ page.next.url }}" class="pagination--pager" title="{{ page.next.title | markdownify | strip_html }}">
-        {{ page.next.title }} &rarr;
+      <a href="{{ base_path }}{{ page.next.url }}" class="pagination--pager pagination--next" title="{{ page.next.title | markdownify | strip_html }}">
+        <span>
+          {{ page.next.title }}
+        </span>
+        <span class="fwd-btn">&rarr;</span>
       </a>
     {% endif %}
   </nav>

@@ -2,7 +2,8 @@
 title: Nested Associations with Phoenix Forms
 ---
 
-Elixir/Phoenix is still a fairly new territory for most developers, as it is for us, and it can be hard to do the most trivial things when starting off with a new framework. So sharing one of those experiences and the solution.
+Elixir/Phoenix is still a new territory for most developers, as is for us, and it can be hard to do the most trivial things when starting off with a new framework. Sharing one of those experiences and the solution.
+
 
 This blog post would share a simple example of storing nested associations (mainly a `has_many` association), with Phoenix forms. A more detailed version of this is available at this [blogpost](http://blog.plataformatec.com.br/2015/08/working-with-ecto-associations-and-embeds/). Our example would work with a `Company`, and it has many `People`.
 
@@ -88,7 +89,7 @@ defmodule Myapp.CompanyController do
   def new(conn, _params) do
     person = Person.changeset(%Person{})
     changeset = Company.changeset(%Company{people: [person]})
-    
+
     render conn, "new.html", changeset: changeset
   end
 
