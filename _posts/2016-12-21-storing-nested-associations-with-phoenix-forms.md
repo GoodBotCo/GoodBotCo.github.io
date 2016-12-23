@@ -30,7 +30,7 @@ defmodule Myapp.Company do
 end
 ```
 
-Note that we are using `cast_assoc/1` here. `cast_assoc/1` is used when you want to manage associations based on external parameters, like Phoenix forms. Ecto compares the data existing in the struct with the data sent through the form and generates the proper operation.
+Note that we are using `cast_assoc/2` here. `cast_assoc/2` is used when you want to manage associations based on external parameters, like Phoenix forms. Ecto compares the data existing in the struct with the data sent through the form and generates the proper operation.
 
 ### `Person`
 
