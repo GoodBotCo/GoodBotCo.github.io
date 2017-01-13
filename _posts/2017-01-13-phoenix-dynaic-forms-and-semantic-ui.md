@@ -153,7 +153,7 @@ end
 
 ### Adding validations to input fields
 
-We'll be using `Phoenix.HTML.Form.input_validations` function to retreive the validations in our changeset. We'll declare `input_opts`, and then pass `input_opts` with `[form, field, input_opts]` inside the `content_tag`.
+We'll be using `Phoenix.HTML.Form.input_validations` function to retreive the validations in our changeset. We'll declare `input_opts`, and then pass `input_opts` with `[form, field, input_opts]` to `input` inside the `content_tag`.
 
 ```elixir
 def input(form, field) do
@@ -241,4 +241,4 @@ defmodule YourApp.InputHelpers do
 end
 ```
 
-To sum it all up. We can essentially write Simple Form in Phoenix in approximately less than 30 minutes.
+To sum it all up. We can essentially write Simple Form in Phoenix in approximately less than 30 minutes. If you have any value additions, please leave it a comment below, thanks!
