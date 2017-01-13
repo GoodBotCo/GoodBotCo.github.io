@@ -36,7 +36,7 @@ Without dynamic forms, the above form would look something like this.
     = submit "Continue", class: "ui primary button"
 ```
 
-In order to automatically show validations in the form, we'll have to declare the validations in the changeset. Let's open `web/models/user.ex`, and the validations.
+In order to automatically show validations in the form, we'll have to declare the validations in the changeset. Let's open `web/models/user.ex`, and add the validations.
 
 ```elixir
 def changeset(struct, params \\ %{}) do
@@ -102,7 +102,7 @@ Now that `InputHelpers` is setup, and imported. Let's change our form to use the
 
 ### Implementing `input` function
 
-After the above step, your page would be displaying nothing on the page. Let's get the input fields back.
+After the above step, your page would be displaying nothing at the moment, that's ok! Let's get the input fields back.
 
 ```elixir
 def input(form, field) do
@@ -118,7 +118,7 @@ def input(form, field) do
   wrapper_opts = [class: "field"]
 
   content_tag :div, wrapper_opts do
-    label = label(form, field, label_value)
+    label = label(form, field, humanize(field))
     input = apply(Phoenix.HTML.Form, type, [form, field])
     error = YourApp.ErrorHelpers.error_tag(form, field) || ""
     [label, input, error]
@@ -138,7 +138,7 @@ def input(form, field) do
   content_tag :div, wrapper_opts do
     label = label(form, field, humanize(field))
     input = apply(Phoenix.HTML.Form, type, [form, field])
-    error = Heartbeat.ErrorHelpers.error_tag(form, field) || ""
+    error = YourApp.ErrorHelpers.error_tag(form, field) || ""
     [label, input, error]
   end
 end
@@ -165,7 +165,7 @@ def input(form, field) do
   content_tag :div, wrapper_opts do
     label = label(form, field, humanize(field))
     input = apply(Phoenix.HTML.Form, type, [form, field, input_opts])
-    error = Heartbeat.ErrorHelpers.error_tag(form, field) || ""
+    error = YourApp.ErrorHelpers.error_tag(form, field) || ""
     [label, input, error]
   end
 end
