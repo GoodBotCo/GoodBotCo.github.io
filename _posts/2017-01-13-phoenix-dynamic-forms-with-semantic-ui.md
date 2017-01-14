@@ -153,7 +153,7 @@ end
 
 ### Adding validations to input fields
 
-We'll be using `Phoenix.HTML.Form.input_validations` function to retreive the validations in our changeset. We'll declare `input_opts`, and then pass `input_opts` with `[form, field, input_opts]` to `input` inside the `content_tag`.
+We'll be using `Phoenix.HTML.Form.input_validations` function to retreive the validations in our changeset. We'll declare `input_options`, and then pass `input_options` with `[form, field, input_options]` to `input` inside the `content_tag`.
 
 ```elixir
 def input(form, field) do
@@ -218,7 +218,7 @@ defmodule YourApp.InputHelpers do
     input_options = [] # To pass custom options to input
 
     validations = Phoenix.HTML.Form.input_validations(form, field)
-    input_options = Keyword.merge(validations, input_opts)
+    input_options = Keyword.merge(validations, input_options)
 
     content_tag :div, wrapper_options do
       label = label(form, field, label_value)
