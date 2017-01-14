@@ -115,9 +115,9 @@ Saving this should make the fields appear again on the page. Next step, is to ad
 ```elixir
 def input(form, field) do
   type = Phoenix.HTML.Form.input_type(form, field)
-  wrapper_opts = [class: "field"]
+  wrapper_options = [class: "field"]
 
-  content_tag :div, wrapper_opts do
+  content_tag :div, wrapper_options do
     label = label(form, field, humanize(field))
     input = apply(Phoenix.HTML.Form, type, [form, field])
     error = YourApp.ErrorHelpers.error_tag(form, field) || ""
@@ -133,9 +133,9 @@ To take this further, let's add some customizing options for `input`. Let's star
 ```elixir
 def input(form, field) do
   type = Phoenix.HTML.Form.input_type(form, field)
-  wrapper_opts = [class: "field #{state_class(form, field)}"]
+  wrapper_options = [class: "field #{state_class(form, field)}"]
 
-  content_tag :div, wrapper_opts do
+  content_tag :div, wrapper_options do
     label = label(form, field, humanize(field))
     input = apply(Phoenix.HTML.Form, type, [form, field])
     error = YourApp.ErrorHelpers.error_tag(form, field) || ""
@@ -158,13 +158,13 @@ We'll be using `Phoenix.HTML.Form.input_validations` function to retreive the va
 ```elixir
 def input(form, field) do
   type = Phoenix.HTML.Form.input_type(form, field)
-  wrapper_opts = [class: "field #{state_class(form, field)}"]
+  wrapper_options = [class: "field #{state_class(form, field)}"]
 
-  input_opts = Phoenix.HTML.Form.input_validations(form, field)
+  input_options = Phoenix.HTML.Form.input_validations(form, field)
 
-  content_tag :div, wrapper_opts do
+  content_tag :div, wrapper_options do
     label = label(form, field, humanize(field))
-    input = apply(Phoenix.HTML.Form, type, [form, field, input_opts])
+    input = apply(Phoenix.HTML.Form, type, [form, field, input_options])
     error = YourApp.ErrorHelpers.error_tag(form, field) || ""
     [label, input, error]
   end
@@ -192,15 +192,15 @@ Remember above we had a custom label for `name`?
 Let's get that back! We'll add the ability to pass options per input, like if you want to specify the `input_type` of an input, or a custom `label`. Let's add options to handle these cases:
 
 ```elixir
-def input(form, field, opts \\ []) do
-  type = opts[:using] || Phoenix.HTML.Form.input_type(form, field)
-  label_value = opts[:label] || humanize(field)
+def input(form, field, options \\ []) do
+  type = options[:using] || Phoenix.HTML.Form.input_type(form, field)
+  label_value = options[:label] || humanize(field)
 ```
 
 And then let's update the `label` to use the `label_value` variable.
 
 ```elixir
-content_tag :div, wrapper_opts do
+content_tag :div, wrapper_options do
   label = label(form, field, label_value)
 ```
 
@@ -210,19 +210,19 @@ Alright, finally. Let's see how our `InputHelpers` look after all this.
 defmodule YourApp.InputHelpers do
   use Phoenix.HTML
 
-  def input(form, field, opts \\ []) do
-    type = opts[:using] || Phoenix.HTML.Form.input_type(form, field)
-    label_value = opts[:label] || humanize(field)
+  def input(form, field, options \\ []) do
+    type = options[:using] || Phoenix.HTML.Form.input_type(form, field)
+    label_value = options[:label] || humanize(field)
 
-    wrapper_opts = [class: "field #{state_class(form, field)}"]
-    input_opts = [] # To pass custom options to input
+    wrapper_options = [class: "field #{state_class(form, field)}"]
+    input_options = [] # To pass custom options to input
 
     validations = Phoenix.HTML.Form.input_validations(form, field)
-    input_opts = Keyword.merge(validations, input_opts)
+    input_options = Keyword.merge(validations, input_opts)
 
-    content_tag :div, wrapper_opts do
+    content_tag :div, wrapper_options do
       label = label(form, field, label_value)
-      input = input(type, form, field, input_opts)
+      input = input(type, form, field, input_options)
       error = YourApp.ErrorHelpers.error_tag(form, field) || ""
       [label, input, error]
     end
@@ -235,8 +235,8 @@ defmodule YourApp.InputHelpers do
     end
   end
 
-  defp input(type, form, field, input_opts) do
-    apply(Phoenix.HTML.Form, type, [form, field, input_opts])
+  defp input(type, form, field, input_options) do
+    apply(Phoenix.HTML.Form, type, [form, field, input_options])
   end
 end
 ```
