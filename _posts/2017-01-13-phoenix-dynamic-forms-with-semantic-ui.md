@@ -2,7 +2,7 @@
 title: Phoenix dynamic forms and Semantic UI
 ---
 
-If you are a Ruby on Rails developer, you might be familiar with the [Simple Form](https://github.com/plataformatec/simple_form) gem. In this post, we'll look at how to build that functionality in Phoenix. Dynamic forms will properly show input fields based on our schema information and also add validations, classes, and errors. We'd be using [Semantic UI](https://github.com/plataformatec/simple_form) as our CSS Framework. We are also using [Slim-lang](https://github.com/slime-lang/phoenix_slime) as our templating engine. We aim to make our forms look something like this.
+If you are a Ruby on Rails developer, you might be familiar with the [Simple Form](https://github.com/plataformatec/simple_form) gem. In this post, we'll look at how to build that functionality in Phoenix. Dynamic forms will properly show input fields based on our schema information and also add validations, classes, and errors. We'd be using [Semantic UI](http://semantic-ui.com/) as our CSS Framework. We are also using [Slim-lang](https://github.com/slime-lang/phoenix_slime) as our templating engine. We aim to make our forms look something like this.
 
 ```elixir
 = form_for @changeset, @action, [class: "ui form"], fn f ->
