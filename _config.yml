@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "The Heartbeat Blog"
+title                    : "Pranav Singh"
 title_separator          : "-"
-name                     : "Heartbeat"
-description              : "Heartbeat is a simple tool to help founders stay connected to their employees."
+name                     : "Pranav Singh"
+description              : "Thoughts and ideas on Technology, Design and Micro-SaaS"
 url                      : # "blog.goodbot.co"
 baseurl                  : #
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -69,9 +69,9 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : "HeartbeatHQ"
+  username               : "pranav7"
 facebook:
-  username               :
+  username               : "pranavsingh7"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -93,10 +93,10 @@ analytics:
 author:
   name             : ""
   avatar           : "Heartbeat.png"
-  bio              : "Heartbeat is a simple tool to help founders stay connected to their employees."
+  bio              : "I am a full-stack developer, and a Product Designer. Currently working at SupportBee."
   location         : 
-  email            : "hello@heartbeathq.com"
-  uri              : "http://heartbeathq.com"
+  email            : "pranav@goodbot.co"
+  uri              : "http://pranavsingh.co"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -114,7 +114,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : "HeartbeatHQ"
+  twitter          : "pranav7"
   vine             :
   weibo            :
   xing             :
