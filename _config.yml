@@ -14,7 +14,7 @@ description              : "Thoughts and ideas on Technology, Design and Micro-S
 url                      : # "blog.goodbot.co"
 baseurl                  : #
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "Heartbeat.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "homercat.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -92,7 +92,7 @@ analytics:
 # Site Author
 author:
   name             : ""
-  avatar           : "Heartbeat.png"
+  avatar           : "homercat.png"
   bio              : "I am a full-stack developer, and a Product Designer. Currently working at SupportBee."
   location         : 
   email            : "pranav@goodbot.co"
