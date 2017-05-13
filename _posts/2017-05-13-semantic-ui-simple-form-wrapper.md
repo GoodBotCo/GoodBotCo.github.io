@@ -1,9 +1,9 @@
 ---
-title: Custom Simple Form wrapper for Semantic UI components
+title: Adding support for Semantic UI Forms and Components with Simple Form
 published: true
 ---
 
-We recently moved away from Bootstrap to [Semantic UI](https://semantic-ui.com) at SupportBee, and I personally really enjoyed that change. It had very usable UI components, and the grid system was way better, offering a simple classes that read like simple English. Overall, I personally felt that I could spin up a new page real fast with Semantic.
+We recently moved away from Bootstrap to [Semantic UI](https://semantic-ui.com) at SupportBee, and I personally really enjoyed that change. It had very usable UI components, and the grid system was way better, offering simple classes that read like simple English. Overall, I felt that I could spin up a new page real fast with Semantic.
 
 Assuming that you have Semantic UI and [Simple Form](https://github.com/plataformatec/simple_form) setup in your project, here is the Simple Form initializer to work with Semantic. Replace the code in `config/initializers/simple_form.rb`, with the code below.
 
@@ -234,9 +234,9 @@ end
 
 ## Examples of using Simple Form wrappers in view templates
 
-We'll look at how we can use the wrappers we added above in our view templates. We've only added custom components for [UI Checkboxes](https://semantic-ui.com/modules/checkbox.html), and [Input Label Addons](https://semantic-ui.com/elements/input.html#labeled).
+While the above configuration is enough to create Semantic UI Forms out of the boxes, all the relevant classes would be applied to the form and it's inputs. However, there are some components that need custom wrappers. We'll look at how we can use the wrappers we added above in our view templates. We've only added custom components for [UI Checkboxes](https://semantic-ui.com/modules/checkbox.html), and [Input Label Addons](https://semantic-ui.com/elements/input.html#labeled).
 
-In the snippet below, pass the checkbox type you want create to `:wrapper`, in this case we've passed `:ui_checkbox`. Other options are `:ui_slider_checkbox` and `:ui_toggle_checkbox`.
+In the snippet below, pass the checkbox type you want to create to `:wrapper`. In this case we've passed `:ui_checkbox`. Other options are `:ui_slider_checkbox` and `:ui_toggle_checkbox`.
 
 ```ruby
 = f.input :published, label: "Published?",
@@ -244,7 +244,7 @@ In the snippet below, pass the checkbox type you want create to `:wrapper`, in t
   wrapper: :ui_checkbox
 ```
 
-We use `:ui_right_labled_input` and `:ui_left_labled_input` to generate input addons, like in the image below.
+We use `:ui_right_labled_input` and `:ui_left_labled_input` to generate input addons, like in the screenshots below.
 
 ![Imgur](http://i.imgur.com/Zx1fN92.png)
 
