@@ -234,7 +234,7 @@ end
 
 ## Examples of using Simple Form wrappers in view templates
 
-While the above configuration is enough to create Semantic UI Forms out of the boxes, all the relevant classes would be applied to the form and it's inputs. However, there are some components that need custom wrappers. We'll look at how we can use the wrappers we added above in our view templates. We've only added custom components for [UI Checkboxes](https://semantic-ui.com/modules/checkbox.html), and [Input Label Addons](https://semantic-ui.com/elements/input.html#labeled).
+While the above configuration is enough to create Semantic UI Forms out of the box, all the relevant classes would be applied to the form and it's inputs. However, there are some components that need custom wrappers. We'll look at how we can use the wrappers we added above in our view templates. We've only added custom components for [UI Checkboxes](https://semantic-ui.com/modules/checkbox.html), and [Input Label Addons](https://semantic-ui.com/elements/input.html#labeled).
 
 In the snippet below, pass the checkbox type you want to create to `:wrapper`. In this case we've passed `:ui_checkbox`. Other options are `:ui_slider_checkbox` and `:ui_toggle_checkbox`.
 
