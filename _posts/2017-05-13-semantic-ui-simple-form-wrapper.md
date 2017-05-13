@@ -1,6 +1,6 @@
 ---
 title: Custom Simple Form wrapper for Semantic UI components
-published: false
+published: true
 ---
 
 We recently moved away from Bootstrap to [Semantic UI](https://semantic-ui.com) at SupportBee, and I personally really enjoyed that change. It had very usable UI components, and the grid system was way better, offering a simple classes that read like simple English. Overall, I personally felt that I could spin up a new page real fast with Semantic.
