@@ -261,3 +261,5 @@ We use `:ui_right_labled_input` and `:ui_left_labled_input` to generate input ad
   .ui.basic.label http://
   = company.input_field :subdomain
 ```
+
+I hope you find this useful in your project. Leave a comment below if you have any questions, or even if you don't, just say hi!
