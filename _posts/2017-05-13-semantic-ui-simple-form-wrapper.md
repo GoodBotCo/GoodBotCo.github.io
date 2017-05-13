@@ -236,8 +236,28 @@ end
 
 We'll look at how we can use the wrappers we added above in our view templates. We've only added custom components for [UI Checkboxes](https://semantic-ui.com/modules/checkbox.html), and [Input Label Addons](https://semantic-ui.com/elements/input.html#labeled).
 
+In the snippet below, pass the checkbox type you want create to `:wrapper`, in this case we've passed `:ui_checkbox`. Other options are `:ui_slider_checkbox` and `:ui_toggle_checkbox`.
+
 ```ruby
 = f.input :published, label: "Published?",
   hint: "If you're not ready to publish the article yet, keep this unchecked.",
   wrapper: :ui_checkbox
+```
+
+We use `:ui_right_labled_input` and `:ui_left_labled_input` to generate input addons, like in the image below.
+
+![Imgur](http://i.imgur.com/Zx1fN92.png)
+
+```ruby
+= f.input :subdomain, wrapper: :ui_right_labled_input do
+  = company.input_field :subdomain
+  .ui.label .example.com
+```
+
+![Imgur](http://i.imgur.com/0zGZmjA.png)
+
+```ruby
+= f.input :domain, wrapper: :ui_left_labled_input do
+  .ui.basic.label http://
+  = company.input_field :subdomain
 ```
