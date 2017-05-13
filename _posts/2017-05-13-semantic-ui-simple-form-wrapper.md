@@ -250,7 +250,7 @@ We use `:ui_right_labled_input` and `:ui_left_labled_input` to generate input ad
 
 ```ruby
 = f.input :subdomain, wrapper: :ui_right_labled_input do
-  = company.input_field :subdomain
+  = f.input_field :subdomain
   .ui.label .example.com
 ```
 
@@ -259,7 +259,7 @@ We use `:ui_right_labled_input` and `:ui_left_labled_input` to generate input ad
 ```ruby
 = f.input :domain, wrapper: :ui_left_labled_input do
   .ui.basic.label http://
-  = company.input_field :subdomain
+  = f.input_field :subdomain
 ```
 
 I hope you find this useful in your project. Leave a comment below if you have any questions, or even if you don't, just say hi!
