@@ -2,9 +2,7 @@
 title: How to add Material Design Icons to a Rails project
 ---
 
-Getting Started: http://google.github.io/material-design-icons/
-
-No blabering about why you need material icons, or what they are. I assume if you are reading this you already know what material icons are, and you need them, for your Rails project. So here we go!
+No blabbering about why you need material icons, or what they are. I assume if you are reading this you already know what material icons are, and you need them, for your Rails project. So here we go!
 
 ### Get the Icons
 `npm install material-design-icons --save`
@@ -91,6 +89,12 @@ Voila! You have the icons. Now use them.
 
 ```
 <i class="material-icons md-24 md-soft>question_answer</i>
+```
+
+If you are just trying out material design icons, and you don't yet want to work so hard to get them working for your project, you can just link them, simple and easy!
+
+```
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
 
 Thanks!
