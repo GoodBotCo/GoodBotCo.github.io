@@ -23,7 +23,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 ### Define the font face
 
-A good idea is to create a new file say `icons.scss`, and then require it in `application.css.scss`. On a sidenote, I usually don't prefer to use the `require` statements, instead I prefer manually importing files using native `@import` for SCSS, this allows me to define global variables that I can use accross files (maybe this is worth a separate post, but who knows.)
+A good idea is to create a new file say `icons.scss`, and then require it in `application.css.scss`. On a sidenote, I usually don't prefer to use the `require` statements, instead I prefer manually importing files using native `@import` for SCSS, this allows me to define global variables that I can use across files (maybe this is worth a separate post, but who knows.)
 
 ```css
 @font-face {
