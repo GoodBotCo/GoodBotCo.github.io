@@ -241,4 +241,4 @@ defmodule YourApp.InputHelpers do
 end
 ```
 
-To sum it all up. We can essentially write Simple Form in Phoenix in approximately less than 30 minutes. If you have any value additions, please leave it a comment below, thanks!
+To sum it all up. We can essentially write Simple Form in Phoenix in approximately less than 30 minutes. If you have any value additions, please leave it in a comment below. This idea was originally shared on the [Plataformatec Blog](http://blog.plataformatec.com.br/2016/09/dynamic-forms-with-phoenix/).
