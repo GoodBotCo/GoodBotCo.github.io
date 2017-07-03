@@ -11,7 +11,7 @@ title                    : "Pranav's Blog"
 title_separator          : "-"
 name                     : "Pranav's Blog"
 description              : "Thoughts and ideas on Technology, Design and Micro-SaaS"
-url                      : 
+url                      : "https://pranavsingh.me"
 baseurl                  : "https://pranavsingh.me"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "homercat.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
