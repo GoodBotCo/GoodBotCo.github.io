@@ -3,7 +3,7 @@ title: Adding support for Semantic UI Forms and Components to Simple Form
 published: true
 ---
 
-We recently moved away from Bootstrap to [Semantic UI](https://semantic-ui.com) at SupportBee, and I personally really enjoyed that change. It had very usable UI components, and the grid system was way better, offering simple classes that read like simple English. Overall, I felt that I could spin up a new page real fast with Semantic.
+We recently moved away from Bootstrap to [Semantic UI](https://semantic-ui.com) at SupportBee, and I personally really enjoyed that change. It had very usable UI components, and the grid system was way better, offering simple classes that read like English. Overall, I felt that I could spin up a new page real fast with Semantic.
 
 Assuming that you have Semantic UI and [Simple Form](https://github.com/plataformatec/simple_form) setup in your project, here is the Simple Form initializer to work with Semantic. Replace the code in `config/initializers/simple_form.rb`, with the code below.
 
