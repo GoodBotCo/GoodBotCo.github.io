@@ -1,5 +1,5 @@
 ---
-title: Adding support for Semantic UI Forms and Components with Simple Form
+title: Adding support for Semantic UI Forms and Components to Simple Form
 published: true
 ---
 
