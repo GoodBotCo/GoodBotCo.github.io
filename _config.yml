@@ -92,8 +92,8 @@ analytics:
 # Site Author
 author:
   name             : ""
-  avatar           : "homercat.png"
-  bio              : "Developer 💻 <br>Designer 🎨 <br>Loves building things 🔧 <br>Works at SupportBee. <br>Currently building <b><a href='https://getcadet.com/'>getcadet.com</a></b>"
+  avatar           : 
+  bio              : "Developer, Designer, Loves builing stuff. <br>Previously worked at SupportBee.com & Bizongo.in <br>Currently hacking on <b><a href='https://getcadet.com/'>getcadet.com</a></b> on the side."
   location         : 
   email            : 
   uri              :
