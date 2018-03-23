@@ -69,6 +69,7 @@
   display: table-cell;
   vertical-align: middle;
   width: 72px;
+  display: none;
 
   @include breakpoint($large) {
     display: block;
