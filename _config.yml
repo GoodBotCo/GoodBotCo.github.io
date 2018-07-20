@@ -10,7 +10,7 @@ locale                   : "en"
 title                    : "Pranav's Blog"
 title_separator          : "-"
 name                     : "Pranav's Blog"
-description              : "Thoughts and ideas on Technology, Design and Micro-SaaS"
+description              : "If there would ever be opinions on this blog, they would be my own."
 url                      : "https://pranavsingh.me"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -93,7 +93,7 @@ analytics:
 author:
   name             : ""
   avatar           : ""
-  bio              : "Developer, Designer, Loves builing stuff. <br>Previously worked at SupportBee.com & Bizongo.in <br>Currently hacking on <b><a href='https://getcadet.com/'>getcadet.com</a></b> on the side."
+  bio              : "Building and Managing the Engineering team at Bizongo Bangalore.<br>Investing my free time in building <a href='https://getcadet.com/'>getcadet.com</a>"
   location         : 
   email            : 
   uri              :
